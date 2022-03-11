@@ -1,0 +1,227 @@
+html,body{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*This is the header*/
+.header {
+  margin: 0;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__image {
+  margin-left: 3rem;
+  height: 90px;
+  width: 200px;
+}
+
+/*This could be much simpler?*/
+.header__text{
+  margin-right: 5rem;
+  margin-top: 1.8rem;
+  display: table-cell;
+}
+
+.header__text--decoration {
+  text-decoration: none;
+  color: rgb(0, 132, 255);
+}
+
+
+/*This is the main section*/
+main {
+  max-width: 100vw;
+  min-height: 70vh;
+  /*display: flex;*/
+}
+
+.section1 {
+  margin-left: 10rem;
+  display: flex;
+  flex-direction: column;
+  /*flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;*/
+}
+
+.section__title {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.section__buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.section__button-google {
+  background-color: #4285f4;
+  color: white;
+  border-width: 0;
+  border-radius: 4px;
+  width: 182px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section__button-google:hover {
+  cursor: pointer;
+}
+
+.section__button-facebook {
+  background-color: #4267b2;
+  color: white;
+  border-width: 0;
+  border-radius: 4px;
+  width: 200px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section__image-facebook--size {
+  height: 2rem;
+}
+
+.section__button-facebook:hover {
+  cursor: pointer;
+}
+
+.section__email-link{
+  text-decoration: none;
+  color: black;
+}
+
+/*
+.section__buttong:hover {
+  background-color: #4285f4;
+}
+
+.button:active {
+  background-color: #4285f4;
+  box-shadow: 0 5px #4285f4;
+  transform: translateY(4px);
+}
+*/
+
+.form__signup{
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+}
+
+/*.form__item-email{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 70%;
+  border-radius: 2px;
+  margin-bottom: .5rem;
+}*/
+
+.form__input-email{
+  margin-bottom: 1rem;
+}
+
+/*.form__item-password{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+  margin-bottom: .5px;
+}*/
+
+.form__input-password{
+  margin-bottom: 1rem;
+}
+
+.form__checkbox-input{
+  background-color: #ffffff;
+  border: solid 1px #ffffff;
+  padding: .7rem;
+  border-radius: 3px;
+}
+
+.item__hyperlink{
+  text-decoration: none;
+  color: rgb(0, 132, 255);
+}
+.item__hyperlink:hover{
+  cursor: pointer;
+}
+
+.button__signup{
+  margin-top: 1rem;
+  color: grey;
+  padding: 14px 40px;
+  border-width: 0;
+  border-radius: 12px;
+  font-size: 12px;
+  display: flex;
+  width: 250px;
+  text-align: center;
+  text-transform:uppercase;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.form__label{
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(37, 37, 37);
+  margin-bottom:.5rem;
+}
+
+.form__input-email, .form__input-password{
+  padding: 0.3rem 1rem;
+  border: solid 1px black;
+  border-radius: 3px;
+  outline: none;
+  transition: ease-in 0.3s;
+}
+
+.form__input-email, .form__input-password{
+  margin-left: 0rem;
+  padding-left: 0.5rem;
+}
+
+.checkbox{
+  display: flex;
+}
+
+.form__checkbox-input{
+  margin-right: 0.5rem;
+  background-color: white;
+  border: solid 1px grey;
+  padding:0.7rem;
+  border-radius: 3px;
+
+}
+
+/**/
+footer{
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 110px;
+}
+
+
+.footer {
+  margin-left: 10rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}

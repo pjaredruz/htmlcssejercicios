@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon for the tab bar-->
+    <link
+      rel="icon"
+      type="image.png"
+      href="./images/icons8-issuu-48.png"
+      alt="issuu icon"
+    />
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Sign in to Issuu | Easy-To-Use Content & Distribution Tools</title>
+  </head>
+  <body>
+    <!--This is the header-->
+    <header>
+      <nav class="header">
+        <img
+          src="./images/issuu-logo-horizontal-colour.jpg"
+          class="header__image"
+          alt="issuu logo"
+        />
+        <p class="header__text">
+          Already a user?<a
+            href="#signIn"
+            class="header__text header__text--decoration"
+            >Sign in</a
+          >
+        </p>
+      </nav>
+    </header>
+    <!--This is the main section-->
+    <main>
+      <section class="section1">
+        <h1 class="section__title">Create an Issuu Account</h1>
+        <div class="section__buttons">
+          <button class="section__button-google" type="button">
+            <img src="./images/google_icon.png" />Sign in with Google
+          </button>
+          <button class="section__button-facebook" type="button">
+            <img
+              class="section__image-facebook--size"
+              src="./images/facebook_icon.png"
+            />Continue with Facebook
+          </button>
+        </div>
+        <p>or with <a class="section__email-link" href="#email">email</a></p>
+
+        <form class="form__signup" action="/action_page.php">
+          <!--<div class="form__item-email">-->
+          <label class="form__label" for="email">Email</label>
+          <input
+            class="form__input-email"
+            type="email"
+            id="email"
+            name="user_email"
+            placeholder="e.g. john.doe@email.com"
+          />
+          <!--</div>-->
+
+          <!--<div class="form__item-password">-->
+          <label class="form__label" for="password">Password</label>
+          <input
+            class="form__input-password"
+            type="password"
+            id="password"
+            name="user_pwd"
+            placeholder=""
+          />
+          <!-- </div>-->
+
+          <div class="checkbox">
+            <input
+              class="form__checkbox-input"
+              type="checkbox"
+              id="terms"
+              name="user_terms"
+            />
+            <!--class="form__label"-->
+            <p>
+              I accept the <a class="item__hyperlink">Terms of Service</a> and
+              the
+              <a class="item__hyperlink">Professional Terms of Service</a>
+            </p>
+          </div>
+        </form>
+        <button class="button__signup">create account</button>
+      </section>
+    </main>
+
+    <!--This is the footer-->
+    <footer>
+      <div class="footer">
+        <p>Issuu Inc.</p>
+        <p>Terms</p>
+        <p>Privacy</p>
+        <p>DMCA</p>
+      </div>
+    </footer>
+  </body>
+</html>

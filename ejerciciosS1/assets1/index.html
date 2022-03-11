@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>MOZZA BAR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--This is the header and navigation of mozzabar's website-->
+    <header>
+      <nav class="navigation">
+        <img class="navigation__image" alt="mozza bar logo" />
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#">Home</a></li>
+          <li class="navigation__item"><a href="#">Concepto</a></li>
+          <li class="navigation__item"><a href="#">Fotos</a></li>
+          <li class="navigation__item"><a href="#">Menú</a></li>
+          <li class="navigation__item"><a href="#">Reservas</a></li>
+          <li class="navigation__item"><a href="#">Blog</a></li>
+          <li class="navigation__item"><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--This is the intro section where the usar sees the main logo.
+    I have set an image with the logo as an example and put it inside a div for positioning.-->
+    <section class="section__intro">
+      <img
+        class="image__background-intro"
+        src=""
+        alt="restaurant image"
+      />
+      <div>
+        <img class="image__title-intro" src="" alt="mozza bar logo">
+      </div>
+    </section>
+    <main>
+      <section class="section__concept">
+        <article class="article">
+          <h4 class="article__title">CONCEPTO</h4>
+          <p>
+            Mozza Bar es un fantástico restaurante de cocina internacional
+            ubicado en el exclusivo barrio de salamanca. Distribuido en una
+            única planta y una estupenda terraza, destaca por su decoración
+            urbana con toques rústicos, que dotan al local de un ambiente
+            especial y acogedor.
+          </p>
+          <p>
+            Disfruta de sus desayunos, estimula tus sentidos con nuestros
+            mejores platos o disfruta de nuestros AfterWork en buena compañia.
+          </p>
+          <p>
+            En Mozza Bar encontrarás clásicos de la gastronomia mundial,
+            elaborados con productos siempre frescos, de calidad y un toque de
+            personalidad.
+          </p>
+        </article>
+      </section>
+      <section class="section__images">
+        <img class="image__background1" src="" alt="image of green leaves" />
+        <div class="grid-container__images">
+          <div>
+            <img
+              class="container__image1"
+              src=""
+              alt="shelf with different drinks"
+            />
+          </div>
+          <div>
+            <img
+              class="container__image2"
+              src=""
+              alt="wall with green flowers"
+            />
+          </div>
+          <div>
+            <img class="container__image3" src="" alt="restaurant tables" />
+          </div>
+          <div>
+            <img class="container__image4" src="" alt="elephant wall art" />
+          </div>
+          <div>
+            <img
+              class="container__image5"
+              src=""
+              alt="bar table with cake and drinks"
+            />
+          </div>
+          <div>
+            <img class="container__image6" src="" alt="plant decoration" />
+          </div>
+          <div>
+            <img class="container__image7" src="" alt="tables and shelves" />
+          </div>
+        </div>
+      </section>
+      <section class="section__menu">
+        <h4 class="section__menu-title">CARTA</h4>
+        <ul class="section__list">
+          <li class="list__menu-item"><a href="#">DESAYUNOS</a></li>
+          <li class="list__menu-item"><a href="#">CARTA</a></li>
+          <li class="list__menu-item"><a href="#">COCKTAILS</a></li>
+        </ul>
+        <img class="table__image-background" src="" alt="green flowers">
+        <!--This is the menu-->
+        <div class="table__breakfast-menu">
+          <img class="table__image-breakfast-left" src="" alt="breakfast menu">
+          <img class="table__image-breakfast-right" src="" alt="breakfast menu">
+        </div>
+        <button class="table__button-menu">VER LA CARTA DE DESAYUNOS</button>
+      </section>
+      <!--This is the booking section-->
+      <section class="section__reservas">
+        <div class="input__reservas-personas">
+          <h4>RESERVAS</h4>
+          <form class="form__reservas" action="reservas">
+            <label for="costumers">Personas</label>
+            <select name="num_personas" id="costumers">
+              <option value="1">1 persona</option>
+              <option value="2">2 personas</option>
+              <option value="3">3 personas</option>
+              <option value="4">4 personas</option>
+              <option value="5">5 personas</option>
+              <option value="6">6 personas</option>
+              <option value="7">+7 personas</option>
+            </select>
+        </div>
+        <div>
+          <label for="time-booking">Hora</label>
+          <input type="time" id="time-booking" name="time-booking" min="07:30" max="01:30" required />
+          </select>
+        </div>
+          <label for="table">Tipo de mesa</label>
+          <select name="table-type" id="table">
+              <option value="Grande">Grande</option>
+              <option value="Pequeña">Pequeña</option>
+              <option value="Mediana">Mediana</option>
+          </select>
+          <button>Reservar</button>
+          <p>Si no encuentra disponibilidad, apúntese en la lista de espera</p>
+          <button>Lista de espera</button>
+          <button>Solicitud de grupo</button>
+          <div>
+            <p>mozzabar food & drinks</p>
+            <p>Conde de Peñalver 64 <br> 28006 - Madrid <br> Abrimos de lunes a domingo <br> de 07:30 a 01:30</p>
+          </div>
+        </form>
+      <!--Blog and social media section-->
+      </section>
+      <h4>BLOG</h4>
+      <section class="section__social-media">
+      <div class="section__item-social">
+        <a class="section__item-image" href="./" rel="image">MOZZA BAR ABRE NUEVA TERRAZA DE VERANO EN BOMBAY LOUNGE</a>
+        <img class src="./" alt="instagram post">
+      </div>
+      <div class="section__item-social">
+        <a class="section__item-image">PROMOCIÓN ESPECIAL: TARTA & COCKTAIL 6,90€</a>
+        <img class src="./" alt="instagram post">
+      </div>
+      <div class="section__item-social">
+        <a class="section__item-image">MOZZA BAR: BRUNCH 2 DE MARZO</a>
+        <img class src="./" alt="instagram post">
+      </div>
+        <button>VER TODAS LAS ENTRADAS</button>
+      </section>
+      <section class="section__info">
+        <img class="image__background-cake"src="./" alt="oreo cake">
+        <p>VEN CUANDO QUIERAS</p>
+        <div >
+        C/ Conde de Peñalver 64 <br> 28006-Madrid
+        </div>
+        <div>
+          901258327
+        </div>
+        <div>
+          hola@mozzabar.es
+        </div>
+        <h4>SÍGUENOS</h4>
+        <button>FACEBOOK</button>
+        <button>INSTAGRAM</button>
+      </section>
+    </main>
+  </body>
+  <!--Footer with information and social media links-->
+  <footer>
+    <div>
+      <p>ENLACES DE INTERÉS</p>
+      <a>Aviso Legal</a>
+      <a>Cookies</a>
+    </div>
+    <div>
+      <p>HORARIOS</p>
+      <p>Lunes a Domingo</p>
+      <p>07:30 - 01:30</p>
+    </div>
+    <div>
+      <p>CONTACTO</p>
+      <p>C/Conde de Peñalver 64</p>
+      <p>28006 - Madrid</p>
+      <p>910 258 327</p>
+      <p>hola@mozzabar.es</p>
+    </div>
+    <div>
+      <p>©2017 Todos los derechos reservados</p>
+    </div>
+    <div>
+      <a href="facebook.com"><img src="" alt="" /></a>
+      <a href="instagram.com"><img src="" alt="" /></a>
+    </div>
+  </footer>
+</html>
