@@ -1,2 +1,2 @@
 # htmlcssejercicios
-HTML/CSS learning practice bootcamp 
+html & css learning practice bootcamp 
