@@ -19,15 +19,16 @@
     <!--This is the header-->
     <header>
       <nav class="header">
+        <!--Create an SVG instead-->
         <img
           src="./images/issuu-logo-horizontal-colour.jpg"
           class="header__image"
           alt="issuu logo"
         />
-        <p class="header__text">
+        <p class="header__text-signin">
           Already a user?<a
             href="#signIn"
-            class="header__text header__text--decoration"
+            class="header__text-signin header__text-signin--decoration"
             >Sign in</a
           >
         </p>
@@ -35,67 +36,63 @@
     </header>
     <!--This is the main section-->
     <main>
-      <section class="section1">
-        <h1 class="section__title">Create an Issuu Account</h1>
-        <div class="section__buttons">
-          <button class="section__button-google" type="button">
+      <form class="form-signup" action="/action_page.php">
+        <h1>Create an Issuu Account</h1>
+        <div class="form-signup__buttons">
+          <button class="form-signup__button-google" type="button" href="#">
             <img src="./images/google_icon.png" />Sign in with Google
           </button>
-          <button class="section__button-facebook" type="button">
+          <button class="form-signup__button-facebook" type="button" href="#">
             <img
-              class="section__image-facebook--size"
+              class="form-signup___image-facebook--size"
               src="./images/facebook_icon.png"
             />Continue with Facebook
           </button>
         </div>
-        <p>or with <a class="section__email-link" href="#email">email</a></p>
-
-        <form class="form__signup" action="/action_page.php">
-          <!--<div class="form__item-email">-->
-          <label class="form__label" for="email">Email</label>
+        <p>
+          or with
+          <a class="form-signup__email-link" href="#">email</a>
+        </p>
+        <label class="form-signup__label" for="email">Email</label>
+        <input
+          class="form-signup__input-email"
+          type="email"
+          id="email"
+          name="user_email"
+          placeholder="e.g. john.doe@email.com"
+          required
+        />
+        <label class="form-signup__label" for="password">Password</label>
+        <input
+          class="form-signup__input-password"
+          type="password"
+          id="password"
+          name="user_pwd"
+          required
+        />
+        <div class="form-signup__checkbox">
           <input
-            class="form__input-email"
-            type="email"
-            id="email"
-            name="user_email"
-            placeholder="e.g. john.doe@email.com"
+            class="form-signup__checkbox-input"
+            type="checkbox"
+            id="checkbox"
+            name="user_terms"
+            required
           />
-          <!--</div>-->
-
-          <!--<div class="form__item-password">-->
-          <label class="form__label" for="password">Password</label>
-          <input
-            class="form__input-password"
-            type="password"
-            id="password"
-            name="user_pwd"
-            placeholder=""
-          />
-          <!-- </div>-->
-
-          <div class="checkbox">
-            <input
-              class="form__checkbox-input"
-              type="checkbox"
-              id="terms"
-              name="user_terms"
-            />
-            <!--class="form__label"-->
-            <p>
-              I accept the <a class="item__hyperlink">Terms of Service</a> and
-              the
-              <a class="item__hyperlink">Professional Terms of Service</a>
-            </p>
-          </div>
-        </form>
+          <p>
+            I accept the
+            <a href="#" class="item__hyperlink">Terms of Service</a> and the
+            <a href="#" class="item__hyperlink"
+              >Professional Terms of Service</a
+            >
+          </p>
+        </div>
         <button class="button__signup">create account</button>
-      </section>
+      </form>
     </main>
-
     <!--This is the footer-->
     <footer>
-      <div class="footer">
-        <p>Issuu Inc.</p>
+      <p>Issuu Inc.</p>
+      <div class="footer__links">
         <p>Terms</p>
         <p>Privacy</p>
         <p>DMCA</p>
